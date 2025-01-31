@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>Post</title>
+</head>
+<body>
+    <nav>
+        <img src="../images/download.jpeg" id="img1" alt="logo">
+        <a href="../Post/post.html" id="post-link">Post</a>
+        <a href="../Category/product.html">Category</a>
+        <a href="../Login/login.html">Login</a>
+        <a href="../My Listings/mylisting.html">My Listing</a>
+    </nav>
+
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <label for="title">Product Title</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="type">Type</label>
+                <select id="type" name="type" required>
+                    <option value="lost">Lost</option>
+                    <option value="found">Found</option>
+                </select>
+
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="question">Enter a question based of the item</label>
+                <input type="text" name="question" id="question">
+
+                <label for="pic">Picture</label>
+                <input type="file" id="pic" name="pic" accept="image/*" required>
+
+                <button type="submit">Create Post</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <div class="container">
+        <div class="lost-items">
+            <h2>Lost Items</h2>
+            <img src="../images/mobile.jpeg" alt="Mobile">
+            <figcaption>Product descprition</figcaption>
+        </div>
+        <div class="found-items">
+            <h2>Found Items</h2>
+            <img src="../images/Watch.jpg" alt="watch"></img>
+            <figcaption>product descprition</figcaption>
+        </div>
+    </div>
+
+    <footer>
+        <a href="About/about.html">About</a>
+        <a href="Contact/contact.html">Contact</a>
+    </footer>
+
+</body>
+</html>
