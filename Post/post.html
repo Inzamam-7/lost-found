@@ -1,72 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../index.css">
-    <title>Post</title>
-</head>
-<body>
+<link rel="stylesheet" href="../index.css">
+<script src="https://kit.fontawesome.com/cd23a1dc33.js" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="post.css"> -->
+<header>
+    <img src="../images/download.jpeg" id="logo" alt="logo">
     <nav>
-        <img src="../images/download.jpeg" id="img1" alt="logo">
-        <a href="../Post/post.html" id="post-link">Post</a>
-        <a href="../Category/product.html">Category</a>
-        <a href="../Login/login.html">Login</a>
-        <a href="../My Listings/mylisting.html">My Listing</a>
-    </nav>
+       <ul class="nav_links">
+        <li>
+            <a href="../Post/post.html">Post</a>
+        </li>
+        <li>
+            <a href="../Category/product.html">Category</a>
+        </li>
+        <li>
+            <a href="../Login/login.html">Login</a>
+        </li>
+        <li>
+            <a href="../My Listings/mylisting.html">My Listing</a>
+        </li>
+       </ul>
+       </nav>
+</header>
 
-    <div id="post-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form>
-                <label for="title">Product Title</label>
-                <input type="text" id="title" name="title" required>
+<div id="post-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form>
+            <label for="title">Product Title</label>
+            <input type="text" id="title" name="title" required>
 
-                <label for="description">Description</label>
-                <textarea id="description" name="description" required></textarea>
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required></textarea>
 
-                <label for="type">Type</label>
-                <select id="type" name="type" required>
-                    <option value="lost">Lost</option>
-                    <option value="found">Found</option>
-                </select>
+            <label for="type">Type</label>
+            <select id="type" name="type" required>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
 
-                <label for="location">Location</label>
-                <input type="text" id="location" name="location" required>
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required>
 
-                <label for="question">Enter a question based of the item</label>
-                <input type="text" name="question" id="question">
+            <label for="question">Enter a question based of the item</label>
+            <input type="text" name="question" id="question">
 
-                <label for="pic">Picture</label>
-                <input type="file" id="pic" name="pic" accept="image/*" required>
+            <label for="pic">Picture</label>
+            <input type="file" id="pic" name="pic" accept="image/*" required>
 
-                <button type="submit">Create Post</button>
-            </form>
-        </div>
+            <button type="submit">Create Post</button>
+        </form>
     </div>
-    <div>
-        <h1>test h1</h1>
-    </div>
+</div>
 
-    
 
-    <div class="container">
-        <div class="lost-items">
-            <h2>Lost Items</h2>
-            <img src="../images/mobile.jpeg" alt="Mobile">
+<div class="container">
+    <h2 class="h2-lost-items">Lost Items</h2>
+    <div class="lost-items">
+        <div class="items">
+            <img src="../images/mobile.jpeg" id="img123" alt="Mobile">
             <figcaption>Product descprition</figcaption>
         </div>
-        <div class="found-items">
-            <h2>Found Items</h2>
-            <img src="../images/Watch.jpg" alt="watch"></img>
+        <div class="items">
+            <img src="../images/Watch.jpg" id="img123" alt="watch">
             <figcaption>product descprition</figcaption>
         </div>
     </div>
 
-    <footer>
-        <a href="About/about.html">About</a>
-        <a href="Contact/contact.html">Contact</a>
-    </footer>
+    <h2 class="h2-found-items">Found Items</h2>
+    <div class="found-items">
+        
+        <div class="item">
+            <img src="../images/Watch.jpg" id="img124" alt="watch">
+            <figcaption>product descprition</figcaption>
+        </div>
+    </div>
+</div>
 
-</body>
-</html>
+<footer>
+    <div class="container">
+        <div class="sec aboutus">
+            <h2>About Us</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam nisi optio, eveniet voluptatem quia praesentium! Quae itaque cumque, repellat sed, dolore est porro mollitia incidunt corporis nulla unde modi.</p>
+            <ul class="sci">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Support</h2>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Contact Us</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa-solid fa-phone"></i></span><p>
+                        <a href="tel:8541887247">8541887247</a>
+                    </p>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-envelope"></i></span><p>
+                        <a href="mailto:inzamamulhaqueata@gmail.com">inzamamulhaqueata@gmail.com</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</footer>
